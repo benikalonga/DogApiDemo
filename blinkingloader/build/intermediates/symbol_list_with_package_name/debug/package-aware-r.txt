@@ -1,0 +1,26 @@
+app.m4ntis.blinkingloader
+animator du_dot_animator
+attr auto_start
+attr dot_animator
+attr dot_animator_reverse
+attr dot_background
+attr dot_blinkingColor
+attr dot_gravity
+attr dot_height
+attr dot_margin
+attr dot_neutralColor
+attr dot_num_dots
+attr dot_orientation
+attr dot_width
+attr du_color
+attr du_filled
+attr du_radius
+color blinkingColor
+color neutralColor
+drawable white_background
+drawable white_radius
+id horizontal
+id vertical
+string app_name
+styleable BlinkingLoader auto_start dot_animator dot_animator_reverse dot_background dot_blinkingColor dot_gravity dot_height dot_margin dot_neutralColor dot_num_dots dot_orientation dot_width
+styleable DuCircleView du_color du_filled du_radius

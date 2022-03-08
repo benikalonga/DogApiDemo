@@ -1,0 +1,27 @@
+R_DEF: Internal format may change without notice
+local
+animator du_dot_animator
+attr? auto_start
+attr? dot_animator
+attr? dot_animator_reverse
+attr? dot_background
+attr? dot_blinkingColor
+attr? dot_gravity
+attr? dot_height
+attr? dot_margin
+attr? dot_neutralColor
+attr? dot_num_dots
+attr? dot_orientation
+attr? dot_width
+attr? du_color
+attr? du_filled
+attr? du_radius
+color blinkingColor
+color neutralColor
+drawable white_background
+drawable white_radius
+id horizontal
+id vertical
+string app_name
+styleable BlinkingLoader dot_width dot_height dot_margin dot_animator dot_animator_reverse dot_blinkingColor dot_neutralColor dot_background dot_num_dots auto_start dot_orientation dot_gravity
+styleable DuCircleView du_radius du_color du_filled
