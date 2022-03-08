@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="dog"
+            type="com.beni.dogs.modeles.Dog" />
+
+        <variable
+            name="itemClickListener"
+            type="com.beni.dogs.modeles.ItemClickListener" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{() -> itemClickListener.onItemClick(dog)}"
+        app:cardUseCompatPadding="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgIcon"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/len_172"
+                tools:src="@drawable/ic_baseline_pets_24"
+                android:scaleType="fitCenter"
+                />
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_gravity="bottom"
+              >
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="bottom"
+                  android:background="@color/black"
+                  android:text="@{dog.url.substring(30, dog.url.lastIndexOf('/'))}"
+                  android:textSize="@dimen/font_12"
+                  android:paddingTop="@dimen/len_2"
+                  android:paddingBottom="@dimen/len_2"
+                  android:paddingLeft="@dimen/len_4"
+                  android:paddingRight="@dimen/len_6"
+                  android:textColor="@color/white"
+                  tools:text="@string/app_name"
+                  />
+          </LinearLayout>
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>
