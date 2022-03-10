@@ -1,4 +1,10 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="len_1">1dp</dimen>
+
+    !-- DogItem -->
+    <dimen name="dog_expanded_height">300dp</dimen>
+    <dimen name="dog_shrunk_height">172dp</dimen>
+    <dimen name="dog_elevation">12dp</dimen>
+
 </resources>

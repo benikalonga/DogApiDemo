@@ -9,15 +9,11 @@
             name="dog"
             type="com.beni.dogs.modeles.Dog" />
 
-        <variable
-            name="itemClickListener"
-            type="com.beni.dogs.modeles.ItemClickListener" />
     </data>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="@{() -> itemClickListener.onItemClick(dog)}"
         app:cardUseCompatPadding="true">
 
         <FrameLayout
@@ -41,7 +37,7 @@
                   android:layout_height="wrap_content"
                   android:layout_gravity="bottom"
                   android:background="@color/black"
-                  android:text="@{dog.url.substring(30, dog.url.lastIndexOf('/'))}"
+                  android:text="@{dog.breed}"
                   android:textSize="@dimen/font_12"
                   android:paddingTop="@dimen/len_2"
                   android:paddingBottom="@dimen/len_2"
