@@ -20,6 +20,9 @@ And a video
  Demo Video [Video](Screenshots/video.mp4)
  
  <p align="center">
+  <h3>Picture 1</h3>
   <img src="Screenshots/1.png" width="350" title="Picture 1">
+  
+  <h3>Picture 2</h3>
   <img src="Screenshots/2.png" width="350" alt="accessibility text">
 </p>
