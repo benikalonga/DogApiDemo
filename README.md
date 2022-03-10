@@ -3,7 +3,6 @@
 Download apk file here [Dog Api Demo](apk/dogapi.apk) 👍
 
 ## Screenshots (Step by step)
-![This is an image](Screenshots/1.png)
  <p align="center">
   <h3>Picture 1</h3>
   <img src="Screenshots/1.png" width="200" title="Picture 1">
@@ -22,6 +21,7 @@ Download apk file here [Dog Api Demo](apk/dogapi.apk) 👍
 <h2>And a video<h2>
 
  Demo Video [Video](Screenshots/video.mp4)
- <video width="640" height="320" controls>
-  <source src="movie.mp4" type="vScreenshots/video.mp4">
+ 
+ <video width="320" height="240" controls>
+  <source src="(Screenshots/video.mp4" type="video/mp4">
 </video>
