@@ -18,3 +18,8 @@ Screenshots (Step by step)
 And a video
 
  Demo Video [Video](Screenshots/video.mp4)
+ 
+ <p align="center">
+  <img src="Screenshots/1.png" width="350" title="Picture 1">
+  <img src="Screenshots/2.png" width="350" alt="accessibility text">
+</p>
