@@ -18,7 +18,6 @@ Download apk file here [Dog Api Demo](apk/dogapi.apk) 👍
   <img src="Screenshots/6.png" width="200" alt="accessibility text">
  </p>
  
-<h2>And a video<h2>
+### And a Video
  
- <h4>Demo Video</h4>
  Demo Video [Video](Screenshots/video.mp4)
