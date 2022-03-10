@@ -22,6 +22,4 @@ Download apk file here [Dog Api Demo](apk/dogapi.apk) 👍
 
  Demo Video [Video](Screenshots/video.mp4)
  
- <video width="320" height="640" controls>
-  <source src="Screenshots/video.mp4" type="video/mp4">
-</video>
+ [![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY)
