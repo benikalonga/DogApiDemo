@@ -10,7 +10,7 @@ public class Dog {
     private String breed;
 
     public Dog(String url) {
-        this.url = url;
+        setUrl(url);
     }
 
     public String getUrl() {
@@ -19,6 +19,7 @@ public class Dog {
 
     public void setUrl(String url) {
         this.url = url;
+        setBreed(url.substring(30, url.lastIndexOf('/')));
     }
 
     public String getBreed() {

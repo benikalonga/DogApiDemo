@@ -7,6 +7,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.beni.dogs.databinding.ActivityDogsBinding;
 import com.beni.dogs.modeles.Breed;
@@ -56,7 +57,7 @@ public class DogsActivity extends AppCompatActivity {
 
         reloadDogs();
 
-        binding.recyclerDog.setLayoutManager(new GridLayoutManager(this, 2, GridLayoutManager.VERTICAL, false));
+        binding.recyclerDog.setLayoutManager(new LinearLayoutManager(this,  LinearLayoutManager.VERTICAL, false));
     }
 
     private void startLoading(){

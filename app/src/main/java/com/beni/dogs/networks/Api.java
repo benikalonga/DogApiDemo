@@ -1,11 +1,5 @@
 package com.beni.dogs.networks;
 
-import com.beni.dogs.modeles.Breed;
-import com.beni.dogs.modeles.Data;
-import com.beni.dogs.modeles.Dog;
-
-import java.util.List;
-
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -25,13 +19,5 @@ public interface Api {
 
     @GET("breed/{breed}/images/")
     Call<ResponseBody> getImagesByBreed(@Path("breed") String breed);
-
-    // LIST BY BREED
-    @GET("breed/%s/images")
-    Call<List<Breed>> getByBreed();
-
-    // LIST ALL BREEDS
-    @GET("breed/%s/list")
-    Call<List<Breed>> getSubBreeds();
 
 }

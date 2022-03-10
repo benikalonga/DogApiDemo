@@ -52,12 +52,17 @@ public class Breed {
     // important code for loading image here
     @BindingAdapter({ "avatar" })
     public static void loadImage(ImageView imageView, String imageURL) {
-        Glide.with(imageView.getContext())
-                .setDefaultRequestOptions(new RequestOptions()
-                        .centerCrop())
-                .load(imageURL)
-                .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)
-                .placeholder(R.drawable.ic_baseline_pets_24)
-                .into(imageView);
+        try {
+            Glide.with(imageView.getContext())
+                    .setDefaultRequestOptions(new RequestOptions()
+                            .centerCrop())
+                    .load(imageURL)
+                    .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)
+                    .placeholder(R.drawable.ic_baseline_pets_24)
+                    .into(imageView);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
     }
 }

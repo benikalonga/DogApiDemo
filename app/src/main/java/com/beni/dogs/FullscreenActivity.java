@@ -5,6 +5,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowInsets;
 import android.widget.ArrayAdapter;
@@ -13,6 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.beni.dogs.databinding.ActivityFullscreenBinding;
@@ -56,6 +58,23 @@ public class FullscreenActivity extends AppCompatActivity {
         buttonRefresh = binding.buttonRefresh;
 
         //Show in fullscreen
+        setFullscreen();
+
+        mContentView.setOnClickListener(v->{
+            ActionBar actionBar = getSupportActionBar();
+            if (actionBar!= null ){
+                if (actionBar.isShowing()){
+                    setFullscreen();
+                }
+                else{
+                    actionBar.show();
+                }
+            }
+        });
+
+        initViews();
+    }
+    private void setFullscreen(){
         if (Build.VERSION.SDK_INT >= 30) {
             mContentView.getWindowInsetsController().hide(
                     WindowInsets.Type.statusBars() | WindowInsets.Type.navigationBars());
@@ -67,8 +86,6 @@ public class FullscreenActivity extends AppCompatActivity {
                     | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
                     | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
         }
-
-        initViews();
     }
 
     public void initViews() {
